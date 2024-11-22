@@ -1,0 +1,110 @@
+/* src/App.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #c2acef, #dab6fc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+h1 {
+  color: #4b3f72;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+h2 {
+  color: #4b3f72;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+button {
+  background-color: #dab6fc;
+  border: none;
+  color: #4b3f72;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #c2acef;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.result {
+  font-size: 1.5em;
+  color: #4b3f72;
+}
+
+.low {
+  color: #e74c3c;
+}
+
+.average {
+  color: #f1c40f;
+}
+
+.high {
+  color: #2ecc71;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+/* Add these styles to src/App.css */
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  height: 15px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #dab6fc;
+  transition: width 0.5s ease-in-out;
+}
